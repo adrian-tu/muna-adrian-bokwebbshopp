@@ -1,0 +1,137 @@
+/* Basinställningar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+
+
+.book-details {
+    text-align: center;
+    margin: 20px;
+}
+
+.book-details img {
+    width: 100%;
+    max-width: 300px; /* Maxbredd på bilden */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.book-details h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.book-details h2 {
+    font-size: 1.5em;
+    color: #777;
+}
+
+.book-details p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.book-details a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.book-details a:hover {
+    background-color: #0056b3;
+}
+
+#pay {
+    background-color: #007BFF;  /* Blå färg */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pay:hover {
+    background-color: #0056b3;  /* Mörkare blå vid hover */
+}
+
+
+/* Media Queries - Anpassa layout för olika skärmstorlekar */
+
+/* För mobiler (skärmstorlekar upp till 600px) */
+@media screen and (max-width: 600px) {
+    .book-details {
+        margin: 10px;
+    }
+
+    .book-details h1 {
+        font-size: 1.8em;
+    }
+
+    .book-details h2 {
+        font-size: 1.2em;
+    }
+
+    .book-details p {
+        font-size: 1em;
+    }
+
+    .book-details a {
+        padding: 8px 16px;
+        font-size: 1em;
+    }
+}
+
+/* För tablets (skärmstorlekar mellan 600px och 900px) */
+@media screen and (max-width: 900px) {
+    .book-details {
+        margin: 20px;
+    }
+
+    .book-details h1 {
+        font-size: 2em;
+    }
+
+    .book-details h2 {
+        font-size: 1.4em;
+    }
+
+    .book-details p {
+        font-size: 1.1em;
+    }
+}
+
+/* För desktop (skärmstorlekar större än 900px) */
+@media screen and (min-width: 901px) {
+    .book-details {
+        width: 50%;
+        margin: 50px auto;
+    }
+
+    .book-details h1 {
+        font-size: 2.5em;
+    }
+
+    .book-details h2 {
+        font-size: 1.8em;
+    }
+
+    .book-details p {
+        font-size: 1.2em;
+    }
+
+    .book-details a {
+        font-size: 1.2em;
+        padding: 12px 24px;
+    }
+}
